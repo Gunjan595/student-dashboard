@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Learning Dashboard
 
-## Getting Started
+A full-stack student dashboard built using Next.js, TypeScript, Tailwind CSS, and Supabase.
 
-First, run the development server:
+This project helps students manage their courses, track learning progress, and monitor overall performance through a clean and modern dashboard interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Why I Built This
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As a Information Technology student, I wanted to create a project that combines:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- User Authentication
+- Database Integration
+- CRUD Operations
+- Dashboard Analytics
+- Modern UI Design
 
-## Learn More
+This project helped me learn how frontend and backend technologies work together in a real-world application.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+###  Authentication
+- User Sign Up
+- User Login
+- Session Management using Supabase Auth
 
-## Deploy on Vercel
+###  Course Management
+- Add New Courses
+- Update Course Progress
+- Delete Courses
+- Store data in Supabase Database
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###  Progress Analytics
+- Total Courses Counter
+- Average Progress Calculation
+- Completed Courses Tracking
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###  User Dashboard
+- Personalized Welcome Section
+- Learning Progress Overview
+- Modern Glassmorphism UI
+
+## Tech Stack
+
+### Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend & Database
+- Supabase
+- PostgreSQL
+
+### Deployment & Version Control
+- Git
+- GitHub
+
+## Project Structure
+app/
+├── courses/
+├── login/
+├── profile/
+├── progress/
+├── settings/
+├── layout.tsx
+└── page.tsx
+
+components/
+├── Sidebar.tsx
+├── HeroTile.tsx
+├── CourseCard.tsx
+├── CourseForm.tsx
+├── UpdateProgressButton.tsx
+└── DeleteCourseButton.tsx
+
+lib/
+└── supabase.ts
+##  Screens Included
+
+- Login Page
+- Dashboard Home
+- Courses Page
+- Progress Overview
+- Settings Page
+## Challenges Faced
+
+During development I faced several challenges:
+
+- Setting up Supabase Authentication
+- Managing Row Level Security (RLS) Policies
+- Fixing Route Protection Issues
+- Handling Server and Client Components in Next.js
+- Integrating CRUD Operations with Supabase
+
+These challenges helped me improve my debugging and problem-solving skills.
+##  Future Improvements
+
+- Course Categories
+- Mobile Optimization
+- Better Analytics Charts
+- User Profile Customization
+- Cloud Deployment
+##  Author
+
+**Gunjan Gautam**
+
+Information Technology Student
+
+Learning Goal: Full Stack Development 
+## Learning Outcome
+
+Through this project I gained hands-on experience with:
+
+- Full Stack Development
+- Authentication Systems
+- Database Management
+- API Integration
+- React & Next.js Development
+- Git & GitHub Workflow
